@@ -1,10 +1,10 @@
 class Plane {
     constructor(flightNumber, pilot, origin, destination){
         this.flightNumber = flightNumber
-        this.passengers = [],
         this.pilot = pilot,
         this.origin = origin,
         this.destination = destination,
+        this.passengers = [],
         this.crew = [] 
     }
     addPassenger(person){

@@ -15,6 +15,8 @@ describe ('Plane Class', () =>{
       testPlane.addPassenger(passenger1)
       testPlane.addPassenger(passenger2)
       testPlane.addCrew(crew1)
+
+      console.log(testPlane)
       expect(testPlane.pilot).toBe('Abdulrazaq Alagbada')
       expect(testPlane.origin).toBe('Nigeria')
       expect(testPlane.destination).toBe('London')
@@ -29,5 +31,10 @@ describe ('Plane Class', () =>{
       expect(testPlane.passengers[0].role).toBe('A1')
       expect(testPlane.passengers[1].role).toBe('A2')
       
+      
     })
+
+    // test('for inheritance', () =>{
+    //   expect(testPlane.passengers[0].origin).toBe('Nigeria')
+    // })
 })
