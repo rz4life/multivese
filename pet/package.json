@@ -1,0 +1,14 @@
+{
+  "name": "pet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pet.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.5"
+  }
+}
