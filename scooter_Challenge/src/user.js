@@ -1,8 +1,10 @@
 class User{
-    constructor(name, dollars){
+    constructor(name, dollars,age, location){
         this.name = name
         this.account = dollars
         this.scooter = {}
+        this.age = age
+        this.location = location 
     }
 
     rentScooter(scooter){
