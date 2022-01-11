@@ -1,0 +1,11 @@
+{
+    "data" :[
+        {"email": "malik@gmail.com", "password": "PS4"},
+        {"email": "toheeb@gmail.com", "password": "PS5"},
+        {"email": "metroid@gmail.com", "password": "PS2"},
+        {"email": "street@gmail.com", "password": "PS4"},
+        {"email": "ludo", "password": "PS2"},
+        {"email": "FIFA", "password": "PS5"},
+        {"email": "Madden", "password": "PS3"}
+    ]
+}

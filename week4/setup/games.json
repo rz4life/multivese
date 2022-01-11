@@ -1,0 +1,11 @@
+{
+    "data" :[
+        {"name": "FF7", "platform": "PS4"},
+        {"name": "sypro", "platform": "PS5"},
+        {"name": "metroid", "platform": "PS2"},
+        {"name": "street fighter", "platform": "PS4"},
+        {"name": "ludo", "platform": "PS2"},
+        {"name": "FIFA", "platform": "PS5"},
+        {"name": "Madden", "platform": "PS3"}
+    ]
+}
