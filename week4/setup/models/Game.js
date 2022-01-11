@@ -1,4 +1,5 @@
 const {db, DataTypes, Model} = require('../db')
+const {User} = require('./User')
 
 class Game extends Model{}
 
@@ -8,5 +9,6 @@ Game.init({
 },{
     sequelize: db
 })
+Game.belongsTo(User)
 
 module.exports = {Game}

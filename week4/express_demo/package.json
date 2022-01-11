@@ -1,5 +1,5 @@
 {
-  "name": "setup",
+  "name": "express_demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,8 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^27.4.7",
-    "sequelize": "^6.13.0",
-    "sqlite3": "^5.0.2"
+    "express": "^4.17.2",
+    "jest": "^27.4.7"
   }
 }

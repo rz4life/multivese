@@ -5,7 +5,8 @@ const {Game} = require('./models/Game')
 const {User} = require('./models/User')
 
 const seed = async () =>{
-  
+    Game.belongsTo(User)
+    User.hasMany(Game)
     await db.sync({force:true})
 
     const seedPath = path.join(__dirname,'games.json')
@@ -14,9 +15,6 @@ const seed = async () =>{
     const buffer2 = await fs.readFile(seedPath2)
     const {data} = JSON.parse(String(buffer))
     const data2 = JSON.parse(String(buffer2))
-    console.log(data)
-    console.log(data2)
-
     const gamePromises = data.map(game => Game.create(game))
     const userPromises = data2.data.map(user => User.create(user))
 
