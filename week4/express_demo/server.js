@@ -1,4 +1,5 @@
 const express = require('express');
+const {body, validationResult} = require ('express-validator')
 const {Game, User} = require ('./index')
 const app = express();
 const port = 3000;
@@ -11,23 +12,14 @@ app.get('/', (req,res) =>{
     res.send('Hello word')
 })
 
-// app.post('/creategameanduser',async (req,res) =>{
-
-//     const user = await User.create({email:'jin@gmail.com', password:'password'})
-//     const game1 = await Game.create({name: "FIFA2021", platform: "PS6"})
-//     const game2 = await Game.create({name: "FIFA2019", platform: "PS3"})
-
-//     await user.addGame(game1)
-//     await user.addGame(game2)
-
-//     const userGames = await user.getGames()
-//     console.log(userGames)
-
-//     // res.json({userGames})
-
-// })
-
-app.post('/addnewuser', async (req,res) =>{
+app.post('/addnewuser', async ,
+body('username').isEmail(), 
+body('password').isLength({min:5}), 
+(req,res) =>{
+    const errors = validationResult(req);
+    if(!errors.isEmpty()){
+        return res.status(400)
+    }
     const newuser = await User.create(req.body)
     res.send('user created ')
 })

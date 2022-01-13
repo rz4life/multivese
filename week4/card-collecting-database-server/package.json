@@ -1,16 +1,15 @@
 {
-  "name": "express_demo",
+  "name": "card-collecting-database-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
-    "express-validator": "^6.14.0",
     "jest": "^27.4.7",
     "sequelize": "^6.13.0",
     "sqlite3": "^5.0.2"
