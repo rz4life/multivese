@@ -1,0 +1,13 @@
+<section>
+<h2>This is a page for a single restaurant </h2>
+<h4>{{restaurant.name}}</h4>
+<img src= "{{restaurant.image}}"/>
+   {{#each restaurant.Menus}}
+        <h2>{{title}}</h2>
+
+    <h4>List of all items on the menu</h4>
+    {{#each MenuItems}}
+    <h4>   --- {{name}} ${{price}}</h4> 
+   {{/each}}
+   {{/each}}
+</section>
