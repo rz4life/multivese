@@ -1,0 +1,15 @@
+{
+    "data":[
+            {"name": "collector1", "budget": 1000},
+            {"name": "collector2", "budget": 1000},
+            {"name": "collector3", "budget": 1000},
+            {"name": "collector4", "budget": 1000},
+            {"name": "collector5", "budget": 1000},
+            {"name": "collector6", "budget": 1000},
+            {"name": "collector7", "budget": 1000},
+            {"name": "collector8", "budget": 1000},
+            {"name": "collector9", "budget": 1000},
+            {"name": "collector10", "budget": 1000}
+    ]
+
+}
