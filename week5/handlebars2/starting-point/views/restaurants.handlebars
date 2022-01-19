@@ -1,8 +1,8 @@
-<section>
+<section class = "allRestaurants">
     <h2>There are {{restaurants.length}} restaurants</h2>
     {{#each restaurants}} {{!-- for each sauces in sauces, create the following html --}}
     <article class = "clearfix item-container block">
-        <h2>{{name}}</h2>
+        <h2 class="names"><a class="names" href="/restaurant/{{id}}">{{name}} </a> </h2>
         <img class="item-img" src="{{image}}" />
     </article>
     {{/each}}
