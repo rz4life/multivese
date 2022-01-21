@@ -1,0 +1,14 @@
+<div>
+    <h2>Sauce #{{sauce.id}}: {{sauce.name}}</h2>
+    <img class="item-img" src="{{sauce.image}}" />
+    <br>
+    <a class="btn" href="/sauces">See Sauce List</a>
+</div>
+
+<br>
+<a class="btn" href = "/update/{{sauce.id}}">Update Sauce</a>
+<br>
+
+<form action = "/delete-sauce/{{sauce.id}}" method="delete">
+    <button type="submit"> Delete</button>
+</form>
